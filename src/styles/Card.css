@@ -1,0 +1,43 @@
+.card {
+    border: solid 1px black;
+    background: var(--cardcolor);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+#avg {
+    grid-area: avg;
+}
+
+#max {
+    grid-area: max
+}
+
+#highest {
+    grid-area: highest
+}
+
+#current {
+    grid-area: current;
+}
+
+.card-header {
+    width: 100%;
+    min-height: 50px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sensor sensor sensor sensor"
+    "max current avg highest"
+}
+
+.card-header p {
+    margin: 1% ;
+}
+
+.card-header div {
+    border: solid 1px black;
+    width: 100%;
+}

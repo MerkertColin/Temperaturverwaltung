@@ -5,6 +5,7 @@ export interface Sensor {
     highestTemp: number,
     maxTemp: number,
     currentTemp: number,
+    averageTemp: number,
     lastTenTemps: Temperature[]
 }
 
